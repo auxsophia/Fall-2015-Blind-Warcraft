@@ -1,0 +1,91 @@
+<Bindings>
+	<Binding name="BINDING_TEST1" header="BLIND_WARCRAFT">
+		BindingTest_Test1()
+	</Binding>
+	<Binding name="BINDING_TEST2" runOnUp="true" header="BLIND_WARCRAFT">
+		BindingTest_Test2(keystate)
+	</Binding>
+	<Binding name="BW_NAVIGATE_NEXT" header="BLIND_WARCRAFT">
+		if(BWSBMODE == true) then
+			bwSBNavigateNext()
+		elseif(bwInvMode == true) then
+			bwInvNavigateNext()
+		elseif(bwQuestMode == true) then
+			bwQuestNext() 
+		elseif(bwRewardMode == true)then 
+			bwRewardRight()
+		elseif(bwAcceptOrDeclineMode == true)then 
+			bwAcceptQuest()
+		elseif(BWQUESTCOMPLETEMODE == true)then 
+			bwQuestComplete()
+		elseif(BWCHARMODE == true) then
+			bwCharNext()
+		elseif(BWBAGMODE == true) then
+			bwBagNext()
+		else
+			bwError("navigate")
+		end
+	</Binding>
+	<Binding name="BW_NAVIGATE_PREV" header="BLIND_WARCRAFT">
+		if(BWSBMODE == true) then
+			bwSBNavigatePrev()
+			bwSBGetInfo()
+		elseif(bwInvMode == true) then
+			bwInvNavigatePrev()
+		elseif(bwQuestMode == true) then 
+			bwQuestPrev() 
+		elseif(bwRewardMode == true)then 
+			bwRewardLeft()
+		elseif(bwAcceptOrDeclineMode == true)then
+			bwDeclineQuest()
+		elseif(BWQUESTCOMPLETEMODE == true)then 
+			bwQuestComplete()
+		elseif(BWCHARMODE == true) then
+			bwCharPrev()
+		elseif(BWBAGMODE == true) then
+			bwBagPrev()
+		else
+			bwError("navigate")
+		end
+	</Binding>
+	<Binding name="BW_NAVIGATE_UP" header="BLIND_WARCRAFT">
+		if(bwRewardMode == true)then 
+			bwRewardUp()
+		elseif(BWQUESTCOMPLETEMODE == true)then
+			bwRewardDown()
+		end
+	</Binding>
+	<Binding name="BW_NAVIGATE_DOWN" header="BLIND_WARCRAFT">
+		if(bwRewardMode == true)then 
+			bwRewardDown()
+		elseif(BWQUESTCOMPLETEMODE == true)then
+			bwRewardUp()
+		end
+	</Binding>
+	<Binding name="BW_STOPREADING" header="BLIND_WARCRAFT">
+		JocysCom_SendChatMessageStop(1)
+	</Binding>
+	<Binding name="BW_MOREINFO" header="BLIND_WARCRAFT">
+		if(BWSBMODE == true) then
+			bwSBMoreInfo()
+		elseif(bwInvMode == true) then
+			bwInvMoreInfo()
+		elseif(bwQuestMode == true)then
+			bwSelectQuest(qIndex)
+		else
+			bwError("moreinfo")
+		end
+	</Binding>	
+	<Binding name="BW_QUESTDIR" header="BLIND_WARCRAFT">
+		calcQuestBearing()
+	</Binding>
+	<Binding name="BW_CALCDISP" header="BLIND_WARCRAFT">
+		calcDisplacement()
+	</Binding>
+	<Binding name="BW_SELECTEDQUEST" header="BLIND_WARCRAFT">
+		bwReadStored()
+	</Binding>
+	<Binding name="BW_SELECTEDQUEST_PROGRESS" header="BLIND_WARCRAFT">
+		bwQuestProgress()
+	</Binding>
+</Bindings>

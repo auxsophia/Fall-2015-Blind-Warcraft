@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77CA0386-DC4E-45B1-91C9-B34C8BC6AEB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JocysCom.TextToSpeech.Monitor</RootNamespace>
+    <AssemblyName>JocysCom.TextToSpeech.Monitor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\JocysCom.TextToSpeech.WowMonitor.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\JocysCom.TextToSpeech.WowMonitor.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>JocysCom.TextToSpeech.Monitor.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SharpDX">
+      <HintPath>Resources\SharpDX\SharpDX.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpDX.DirectSound">
+      <HintPath>Resources\SharpDX\SharpDX.DirectSound.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\AudioHelper.cs" />
+    <Compile Include="Audio\EffectsPreset.cs" />
+    <Compile Include="Audio\EffectType.cs" />
+    <Compile Include="Audio\KeyValue.cs" />
+    <Compile Include="Common\Crc32.cs" />
+    <Compile Include="Common\HiLoUhsort.cs" />
+    <Compile Include="Common\InstalledVoiceEx.cs" />
+    <Compile Include="Common\JocysCom\ComponentModel\PropertyComparer.cs" />
+    <Compile Include="Common\JocysCom\ComponentModel\SortableBindingList.cs" />
+    <Compile Include="Common\JocysCom\Controls\ControlsHelper.cs" />
+    <Compile Include="Common\JocysCom\Runtime\Serializer.cs" />
+    <Compile Include="Common\NativeMethods.cs" />
+    <Compile Include="Common\SettingsFile.cs" />
+    <Compile Include="Controls\MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageBoxForm.Designer.cs">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MonitorsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MonitorsUserControl.Designer.cs">
+      <DependentUpon>MonitorsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OptionsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OptionsControl.Designer.cs">
+      <DependentUpon>OptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SoundsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SoundsUserControl.Designer.cs">
+      <DependentUpon>SoundsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VoiceOverridesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\VoiceOverridesUserControl.Designer.cs">
+      <DependentUpon>VoiceOverridesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Network\IpHeader.cs" />
+    <Compile Include="Network\IpHeaderFlags.cs" />
+    <Compile Include="Audio\JobStatusType.cs" />
+    <Compile Include="Common\MainHelper.cs" />
+    <Compile Include="Audio\PitchShifter.cs" />
+    <Compile Include="Audio\PlayItem.cs" />
+    <Compile Include="Common\RuntimePolicyHelper.cs" />
+    <Compile Include="Controls\Sounds.cs" />
+    <Compile Include="Network\TcpHeader.cs" />
+    <Compile Include="Network\TcpHeaderFlags.cs" />
+    <Compile Include="Controls\SoundEffectsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SoundEffectsControl.Designer.cs">
+      <DependentUpon>SoundEffectsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audio\EffectsGeneral.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Network\message.cs" />
+    <Compile Include="Network\WowListItem.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Controls\MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MonitorsUserControl.resx">
+      <DependentUpon>MonitorsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OptionsControl.resx">
+      <DependentUpon>OptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SoundsUserControl.resx">
+      <DependentUpon>SoundsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VoiceOverridesUserControl.resx">
+      <DependentUpon>VoiceOverridesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SoundEffectsControl.resx">
+      <DependentUpon>SoundEffectsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Audio\Emote.wav" />
+    <EmbeddedResource Include="Resources\Audio\Important.wav" />
+    <EmbeddedResource Include="Resources\Audio\Message.wav" />
+    <EmbeddedResource Include="Resources\Audio\Normal.wav" />
+    <EmbeddedResource Include="Resources\Audio\Private.wav" />
+    <EmbeddedResource Include="Resources\Audio\Radio.wav" />
+    <EmbeddedResource Include="Resources\Audio\Radio1.wav" />
+    <EmbeddedResource Include="Resources\Documents\JocysCom.TextToSpeech.Monitor.rtf" />
+    <EmbeddedResource Include="Resources\Icons\Information.png" />
+    <None Include="Resources\Adobe\Adobe Photoshop CS6 %2864 Bit%29\Plug-ins\File Formats\BLP.8bi" />
+    <None Include="Resources\Adobe\Adobe Photoshop CS6 %2864 Bit%29\Plug-ins\File Formats\ICO.8bi" />
+    <None Include="Resources\Fonts\FRIZQUAD.TTF" />
+    <None Include="Resources\Fonts\MORPHEUS.TTF" />
+    <None Include="Resources\Fonts\SKURRI.ttf" />
+    <None Include="Resources\Icons\Businessman.png" />
+    <None Include="Resources\Icons\BusinessPeople.png" />
+    <None Include="Resources\Icons\Code_Edit.png" />
+    <None Include="Resources\Icons\Data_Into.png" />
+    <None Include="Resources\Icons\Data_Out.png" />
+    <None Include="Resources\Icons\Delete.png" />
+    <None Include="Resources\Icons\Error_32x32.png" />
+    <None Include="Resources\Icons\eye.png" />
+    <None Include="Resources\Icons\Icons.psd" />
+    <None Include="Resources\Icons\Information_32x32.png" />
+    <None Include="Resources\Icons\message.ico" />
+    <None Include="Resources\Icons\Message_Incoming.png" />
+    <None Include="Resources\Icons\Message_SAPI.png" />
+    <None Include="Resources\Icons\Minus.png" />
+    <None Include="Resources\Icons\Minus_Small.png" />
+    <None Include="Resources\Icons\Music.png" />
+    <None Include="Resources\Icons\Plus.png" />
+    <None Include="Resources\Icons\Question_32x32.png" />
+    <None Include="Resources\Icons\Save.png" />
+    <None Include="Resources\Icons\Square_Glass_Green.png" />
+    <None Include="Resources\Icons\Square_Glass_Grey.png" />
+    <None Include="Resources\Icons\Square_Glass_Red.png" />
+    <None Include="Resources\Icons\Triangle_Glass_Blue.png" />
+    <None Include="Resources\Icons\Undo.png" />
+    <None Include="Resources\Icons\Warning_32x32.png" />
+    <None Include="Resources\Icons\Window_Effects_Editor.png" />
+    <None Include="Resources\Icons\Window_Effects_Presets.png" />
+    <None Include="Resources\Images Addon\CHATFRAME\UI-CHATINPUTBORDER-LEFT.BLP" />
+    <None Include="Resources\Images Addon\CHATFRAME\UI-ChatInputBorder-Left2.blp" />
+    <None Include="Resources\Images Addon\CHATFRAME\UI-ChatInputBorder-Mid.blp" />
+    <None Include="Resources\Images Addon\CHATFRAME\UI-ChatInputBorder-Mid2.blp" />
+    <None Include="Resources\Images Addon\CHATFRAME\UI-CHATINPUTBORDER-RIGHT.BLP" />
+    <None Include="Resources\Images Addon\CHATFRAME\UI-ChatInputBorder-Right2.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\DialogAlertIcon.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\DialogFrame-Bot.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\DialogFrame-Corners.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\DialogFrame-Left.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\DialogFrame-Right.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\DialogFrame-Top.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\DialogIcon-AlertNew-16.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-Dialog-Icon-AlertNew.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-Dialog-Icon-AlertOther.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Background-Dark.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Background.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Border.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Corner.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Divider.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Gold-Background.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Gold-Border.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Gold-Corner.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Gold-Dragon.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Gold-Header.blp" />
+    <None Include="Resources\Images Addon\DialogFrame\UI-DialogBox-Header.blp" />
+    <None Include="Resources\Images Addon\FrameGeneral\!UI-Frame.blp" />
+    <None Include="Resources\Images Addon\FrameGeneral\UI-Background-Marble.blp" />
+    <None Include="Resources\Images Addon\FrameGeneral\UI-Background-Rock.blp" />
+    <None Include="Resources\Images Addon\FrameGeneral\UI-Frame.blp" />
+    <None Include="Resources\Images Addon\FrameGeneral\_UI-Frame.blp" />
+    <None Include="Resources\Images Addon\JocysCom-Border-2-H.blp" />
+    <None Include="Resources\Images Addon\JocysCom-Border-2-H.psd" />
+    <None Include="Resources\Images Addon\JocysCom-Border-2.blp" />
+    <None Include="Resources\Images Addon\JocysCom-DialogueMiniFrame-Background.psd" />
+    <None Include="Resources\Images Addon\JocysCom-MiniMenuFrame-Border.psd" />
+    <None Include="Resources\Images Addon\JocysCom_TTS_WoW_Addon.psd" />
+    <None Include="WoW\Downloads\1.0.10.1\JocysCom-WoW-TextToSpeech.sha" />
+    <None Include="WoW\Downloads\1.0.10.1\JocysCom-WoW-TextToSpeech.zip" />
+    <None Include="WoW\FrameXML\UI.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WoW\JocysCom-TextToSpeech-WoW.bat" />
+    <None Include="WoW\JocysCom-TextToSpeech-WoW.zip" />
+    <None Include="WoW\JocysCom-TextToSpeech-WoW\JocysCom-TextToSpeech-WoW.Help-Online.URL" />
+    <None Include="WoW\JocysCom-TextToSpeech-WoW\JocysCom-TextToSpeech-WoW.lua" />
+    <None Include="WoW\JocysCom-TextToSpeech-WoW\JocysCom-TextToSpeech-WoW.toc" />
+    <None Include="WoW\JocysCom-TextToSpeech-WoW\JocysCom-TextToSpeech-WoW.wowproj" />
+    <None Include="WoW\JocysCom-TextToSpeech-WoW\JocysCom-TextToSpeech-WoW.wowsln" />
+    <None Include="WoW\JocysCom.TextToSpeech.Monitor.sign.bat" />
+    <None Include="WoW\JocysCom.TextToSpeech.WoW.mklink.bat" />
+    <None Include="WoW\MakeLinkToLua.bat" />
+    <None Include="app.config" />
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Audio\Radio2.wav" />
+    <EmbeddedResource Include="Resources\Audio\Radio3.wav" />
+    <EmbeddedResource Include="Resources\Audio\Radio4.wav" />
+    <Content Include="Resources\Documents\JocysCom.TextToSpeech.Monitor.html" />
+    <EmbeddedResource Include="Resources\SharpDX\SharpDX.DirectSound.dll" />
+    <EmbeddedResource Include="Resources\SharpDX\SharpDX.DirectSound.xml" />
+    <EmbeddedResource Include="Resources\SharpDX\SharpDX.dll" />
+    <EmbeddedResource Include="Resources\SharpDX\SharpDX.xml" />
+    <Content Include="WoW\JocysCom-TextToSpeech-WoW-Overrides.txt" />
+    <Content Include="WoW\Overrides\Settings.Overrides.xml" />
+    <Content Include="WoW\JocysCom-TextToSpeech-WoW-Sounds.txt" />
+    <Content Include="WoW\Sounds\Settings.Sounds.xml" />
+    <EmbeddedResource Include="WoW\Settings\Settings.Monitor.xml" />
+    <Content Include="Resources\Icons\About.ico" />
+    <Content Include="Resources\Icons\About.png" />
+    <Content Include="Resources\Icons\Businessman.ico" />
+    <Content Include="Resources\Icons\BusinessPeople.ico" />
+    <Content Include="Resources\Icons\Code_Edit.ico" />
+    <Content Include="Resources\Icons\data_into.ico" />
+    <Content Include="Resources\Icons\data_out.ico" />
+    <Content Include="Resources\Icons\Delete.ico" />
+    <Content Include="Resources\Icons\download.ico" />
+    <Content Include="Resources\Icons\Download.png" />
+    <Content Include="Resources\Icons\Error.ico" />
+    <Content Include="Resources\Icons\Eye.ico" />
+    <Content Include="Resources\Icons\Information.ico" />
+    <Content Include="Resources\Icons\Minus.ico" />
+    <Content Include="Resources\Icons\Music.ico" />
+    <Content Include="Resources\Icons\Play_List.png" />
+    <Content Include="Resources\Icons\Plus.ico" />
+    <Content Include="Resources\Icons\Plus_Small.png" />
+    <Content Include="Resources\Icons\Question.ico" />
+    <Content Include="Resources\Icons\Square_Glass_Blue.png" />
+    <Content Include="Resources\Icons\Square_Glass_Red.ico" />
+    <Content Include="Resources\Icons\Triangle_Glass_Blue.ico" />
+    <Content Include="Resources\Icons\Warning.ico" />
+    <Content Include="Resources\Icons\Window.ico" />
+    <Content Include="Resources\Images Addon\JocysCom_TTS_WoW_Addon.png" />
+    <Content Include="Resources\Images Addon\JocysCom_TTS_WoW_Addon_Buttons.png" />
+    <Content Include="Resources\Images Addon\JocysCom_TTS_WoW_Addon_MiniFrame.png" />
+    <Content Include="Resources\Images Addon\JocysCom_TTS_WoW_Addon_Small.png" />
+    <Content Include="WoW\GoogleDriver.ReadMe.txt" />
+    <Content Include="WoW\HowToExportInterfaceCode.txt" />
+    <Content Include="WoW\JocysCom-TextToSpeech-WoW-Exclude.txt" />
+    <Content Include="WoW\JocysCom-TextToSpeech-WoW-Images.txt" />
+    <Content Include="WoW\JocysCom-TextToSpeech-WoW-Include.txt" />
+    <Content Include="WoW\JocysCom-TextToSpeech-WoW-Presets.txt" />
+    <Content Include="WoW\JocysCom-TextToSpeech-WoW\JocysCom-TextToSpeech-WoW.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WoW\Presets\Beast.preset.xml" />
+    <Content Include="WoW\Presets\Default.preset.xml" />
+    <Content Include="WoW\Presets\Demon.preset.xml" />
+    <Content Include="WoW\Presets\Dragonkin.preset.xml" />
+    <Content Include="WoW\Presets\Elemental.preset.xml" />
+    <Content Include="WoW\Presets\Giant.preset.xml" />
+    <Content Include="WoW\Presets\Humanoid.preset.xml" />
+    <Content Include="WoW\Presets\Mechanical.preset.xml" />
+    <Content Include="WoW\Presets\Undead.preset.xml" />
+    <Content Include="app.ico" />
+    <None Include="Resources\desktop.ini" />
+    <Content Include="Resources\Documents\Google Chrome TTS.html" />
+    <Content Include="Resources\Images Monitor\Local_Security_Policy_Capture_UAC.png" />
+    <None Include="Resources\Documents\Microsoft Multilingual TTS.URL" />
+    <None Include="Controls\MessageBoxFormImages\MessageBoxIcon_Error.ico" />
+    <None Include="Controls\MessageBoxFormImages\MessageBoxIcon_Error_32x32.png" />
+    <None Include="Controls\MessageBoxFormImages\MessageBoxIcon_Information.ico" />
+    <None Include="Controls\MessageBoxFormImages\MessageBoxIcon_Information_32x32.png" />
+    <None Include="Controls\MessageBoxFormImages\MessageBoxIcon_Question.ico" />
+    <None Include="Controls\MessageBoxFormImages\MessageBoxIcon_Question_32x32.png" />
+    <None Include="Controls\MessageBoxFormImages\MessageBoxIcon_Warning.ico" />
+    <None Include="Controls\MessageBoxFormImages\MessageBoxIcon_Warning_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SpeechLib">
+      <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

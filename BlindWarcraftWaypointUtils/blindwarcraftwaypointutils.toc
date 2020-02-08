@@ -1,0 +1,12 @@
+## Interface: 60200
+## Title: Blind Warcraft Waypoint Utilities
+## Version: 1.0.1
+## Notes: Oh god what am i doing
+## Author: Trenton, Brandon, Josh
+## Dependencies: BlindWarcraft
+
+##SavedVariablesPerCharacter: BWWPA, BWWAYINDEX
+
+bwWaypointUtils.lua
+bwuGlobals.lua
+bwuTESTFILE.lua

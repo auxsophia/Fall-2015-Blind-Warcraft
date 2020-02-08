@@ -1,0 +1,7 @@
+NAME			EMAIL
+----------------------	--------------------------------------
+Jehoshua Josue		josuej@unlv.nevada.edu
+Elliott Ploutz		ploutze@unlv.nevada.edu
+Trenton Balogh          baloght@unlv.nevada.edu
+Brandon Navarro		navarroo@unlv.nevada.edu
+Angelo Dejesus		dejesus7@unlv.nevada.edu

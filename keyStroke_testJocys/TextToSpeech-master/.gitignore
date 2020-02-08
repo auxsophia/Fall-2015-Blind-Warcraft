@@ -1,0 +1,10 @@
+/.svn
+/TextToSpeech/bin
+/TextToSpeech/obj
+/*.suo
+/*.user
+/TextToSpeech/Addon/JocysCom-WoW-TextToSpeech/*.wowsuo
+/TextToSpeech/WoW/JocysCom-TextToSpeech-WoW/*.wowsuo
+/TextToSpeech/*.suo
+/TextToSpeech/*.user
+/*.sdf

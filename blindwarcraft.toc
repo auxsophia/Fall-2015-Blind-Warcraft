@@ -1,0 +1,22 @@
+## Interface: 60200
+## Title: Blind Warcraft
+## Version: 1.0.1
+## Notes: Now with Combat and Spellbook!
+## Author: Trenton, Elliot, Brandon, Angelo, Jehoshua
+
+## This thing just below can be used to save variables between play sessions.
+##SavedVariablesPerCharacter: selectedQuest, QUESTREWARDSTABLE, RLOADED, NEWCHAR
+
+globals.lua
+eventHandler.lua
+bwSpellBookCommands.lua
+bwQuestCommands.lua
+bwSlashCommandHandler.xml
+bwSlashCommandHandler.lua
+bwBagCommands.lua
+bwBindings.lua
+bwQuestLocator.lua
+Bindings.xml
+bwHelpCommands.lua
+bwCharCommands.lua
+dupWPList.lua
